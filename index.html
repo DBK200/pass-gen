@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+    <h1>Password Generator</h2>
+
     <head>
         <meta charset="UTF-8" />
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
@@ -10,17 +12,13 @@
         </script>
         <link rel="stylesheet" href="style.css"/>
         <title>Password Generator</title>
-    
+
     </head>
 <body>
 <div class="container">
-	<h2>Password Generator</h2>
-	<div class="result-container">
-		<span id="result"></span>
-		<button class="btn" id="clipboard">
-			<i class="far fa-clipboard"></i>
-		</button>
-	</div>
+    <button class="btn btn-large" id="generate">
+		Generate password
+	</button>
 	<div class="settings">
 		<div class="setting">
 			<label>Password length</label>
@@ -43,9 +41,13 @@
 			<input type="checkbox" id="symbols" checked />
 		</div>
 	</div>
-	<button class="btn btn-large" id="generate">
-		Generate password
-	</button>
+
+    <div class="result-container">
+		<span id="result"></span>
+		<button class="btn" id="clipboard">
+			<i class="far fa-clipboard"></i>
+		</button>
+	</div>
 </div>
 <script src="main.js" ></script>
 </body>
